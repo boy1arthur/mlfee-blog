@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 export default function Error({ error, reset }) {
   return (
     <div className="container" style={{
@@ -49,7 +49,7 @@ export default function Error({ error, reset }) {
         >
           다시 시도
         </button>
-        <a 
+        <Link 
           href="/"
           style={{
             padding: '0.75rem 1.5rem',

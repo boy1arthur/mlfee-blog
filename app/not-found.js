@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function NotFound() {
   return (
     <div className="container" style={{
@@ -15,7 +17,7 @@ export default function NotFound() {
         요청하신 페이지가 존재하지 않거나 이동되었을 수 있습니다.
       </p>
       <div style={{ display: 'flex', gap: '1rem' }}>
-        <a 
+        <Link
           href="/" 
           style={{
             padding: '0.75rem 1.5rem',
@@ -27,8 +29,8 @@ export default function NotFound() {
           }}
         >
           홈으로 돌아가기
-        </a>
-        <a 
+        </Link>
+        <Link 
           href="/blog" 
           style={{
             padding: '0.75rem 1.5rem',
@@ -41,7 +43,7 @@ export default function NotFound() {
           }}
         >
           블로그 보러가기
-        </a>
+        </Link>
       </div>
     </div>
   );
