@@ -1,3 +1,4 @@
+"use client";
 export default function BlogLoading() {
   return (
     <div className="container">

@@ -1,3 +1,4 @@
+"use client";
 export default function PostLoading() {
   return (
     <article className="post">
